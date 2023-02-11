@@ -1378,6 +1378,7 @@ body._touch .infoblock__poster .infoblock__sub-list {
   background-color: #fff;
   padding: 12px;
   min-width: 255px;
+  top: 100%;
 }
 
 body._touch .menu__link.mobile .infoblock__sub-list.mobile {
@@ -2487,6 +2488,7 @@ body._touch .menu__list li:last-child {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
 
   .header__menu {
@@ -2509,7 +2511,7 @@ body._touch .menu__list li:last-child {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     -webkit-box-shadow: 0 0 22px 1px lightgrey;
-    box-shadow: 0 0 22px 1px lightgrey;
+            box-shadow: 0 0 22px 1px lightgrey;
     border-radius: 8px;
   }
 
@@ -2640,7 +2642,7 @@ body._touch .menu__list li:last-child {
 
   body._touch .menu__arrow.first {
     display: block;
-    margin: 20px 10px 20px 20px;
+    margin: 10px;
   }
 
   .infoblock__poster-element-text-title {
@@ -2746,7 +2748,7 @@ body._touch .menu__list li:last-child {
 
   body._touch .menu__arrow.first,
   body._pc .menu__arrow.first {
-    margin-right: 35px;
+    margin-right: 20px;
   }
 
   .footer__nav {
@@ -2992,7 +2994,7 @@ body._touch .menu__list li:last-child {
   .menu__list > li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 20px 0px;
   }
 
   .menu__list > li:last-child {
@@ -3521,6 +3523,10 @@ body._touch .menu__list li:last-child {
   }
 
   .menu__list > li._active .menu__sub-list {
+    display: block;
+  }
+
+  .menu__list > li._active .infoblock__sub-list.mobile {
     display: block;
   }
 
