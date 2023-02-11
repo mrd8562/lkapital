@@ -102,6 +102,13 @@ h6 {
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
   src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
   font-weight: 700;
 }
@@ -1031,7 +1038,7 @@ swiper-container .swiper-notification {
   background-image: url("/src/img/AR-181019991.jpg"); }
 
 body {
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Open Sans", sans-serif;
   line-height: 1.37;
 }
@@ -1290,7 +1297,7 @@ body._touch .mobile__buton._active .menu__arrow {
 }
 
 .infoblock__poster-link {
-  max-width: 222px;
+  max-width: 227px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2051,6 +2058,10 @@ body._touch .mobile__buton .menu__arrow {
   color: #09f;
 }
 
+.service {
+  padding-bottom: 3.85rem;
+}
+
 .service__tittle {
   margin-left: 1rem;
   margin-bottom: 3rem;
@@ -2177,6 +2188,88 @@ body._touch .mobile__buton .menu__arrow {
   text-align: center;
 }
 
+.service__fin-slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.consult-item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.75rem 1rem 0;
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+}
+
+.consult-item-wrapper:hover {
+  text-decoration: underline;
+  background-color: #0094f8;
+}
+
+.consult-item-wrapper:hover .consult-item-text,
+.consult-item-wrapper:hover .consult-item-descriprion-text {
+  color: #fff;
+}
+
+.consult-item {
+  min-width: 0;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.consult-item-img-block {
+  height: 12rem;
+}
+
+.consult-item-img {
+  height: 100%;
+  padding-bottom: 0.75rem;
+}
+
+.consult-item-text-block {
+  padding-bottom: 0.75rem;
+}
+
+.consult-item-text {
+  color: #002d93;
+  margin-bottom: 0.2rem;
+  margin-top: 0.5rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+.consult-item-descriprion-text {
+  font-weight: 400;
+  color: #777777;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  word-wrap: break-word;
+}
+
+.service__fin-slider .swiper-button-prev {
+  left: 0;
+}
+
+.service__fin-slider .swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-next:hover svg use,
+.swiper-button-prev:hover svg use,
+#scrollToTop:hover svg use {
+  fill: #002d93;
+}
+
 body._pc .menu__list li:last-child,
 body._touch .menu__list li:last-child {
   display: none;
@@ -2190,7 +2283,7 @@ body._touch .menu__list li:last-child {
   }
 
   .infoblock__phone-link {
-    font-size: calc(12px + 4 * (100vw / 3600));
+    font-size: calc(17px + 0 * (100vw / 3600));
   }
 
   .service__breadcrumbs {
@@ -2286,6 +2379,14 @@ body._touch .menu__list li:last-child {
   .discriptor-text {
     font-size: calc(12px + 10 * (100vw / 3600));
   }
+
+  .consult-item-text {
+    font-size: calc(16px + 14 * (100vw / 3600));
+  }
+
+  .consult-item-descriprion-text {
+    font-size: calc(14px + 6 * (100vw / 3600));
+  }
 }
 
 @media (min-width: 970px) {
@@ -2304,6 +2405,19 @@ body._touch .menu__list li:last-child {
 }
 
 @media (min-width: 992px) {
+  body._pc .menu__arrow {
+    width: 0;
+    height: 0;
+    -webkit-transition: -webkit-transform 0.3s ease 0s;
+    transition: -webkit-transform 0.3s ease 0s;
+    -o-transition: transform 0.3s ease 0s;
+    transition: transform 0.3s ease 0s;
+    transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+    border-top: 8px solid #333;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
+
   .footer__content > .social-link {
     display: none;
   }
@@ -2349,6 +2463,12 @@ body._touch .menu__list li:last-child {
   body._touch .menu__arrow.first,
   body._pc .menu__arrow.first {
     display: none;
+  }
+}
+
+@media (min-width: 1300px) and (min-width: 767px) {
+  .infoblock__poster-element-text-title {
+    font-size: calc(16px + 4 * (100vw / 3600));
   }
 }
 
@@ -2480,6 +2600,10 @@ body._touch .menu__list li:last-child {
 }
 
 @media (max-width: 1300px) {
+  .menu__list {
+    font-weight: 600;
+  }
+
   body._pc .header .menu__list li:last-child,
   body._touch .header .menu__list li:last-child {
     display: -webkit-box;
@@ -2492,8 +2616,9 @@ body._touch .menu__list li:last-child {
     margin-left: 20px;
   }
 
-  body._touch .menu__sub-list {
-    padding-left: 70px;
+  body._touch .menu__sub-list,
+  body._touch .infoblock__sub-list.mobile {
+    padding-left: 40px;
   }
 
   body._touch .menu__sub-list,
@@ -2746,6 +2871,14 @@ body._touch .menu__list li:last-child {
   .news-item {
     height: 412px;
   }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+  }
 }
 
 @media (max-width: 968px) {
@@ -2944,7 +3077,7 @@ body._touch .menu__list li:last-child {
   }
 
   .infoblock__phone-link {
-    font-size: calc(12px + 6.8 * ((100vw - 320px) / 3600));
+    font-size: calc(17px + 0 * ((100vw - 320px) / 3600));
   }
 
   .service__breadcrumbs {
@@ -3040,6 +3173,14 @@ body._touch .menu__list li:last-child {
   .discriptor-text {
     font-size: calc(12px + 17 * ((100vw - 320px) / 3600));
   }
+
+  .consult-item-text {
+    font-size: calc(16px + 23.8 * ((100vw - 320px) / 3600));
+  }
+
+  .consult-item-descriprion-text {
+    font-size: calc(14px + 10.2 * ((100vw - 320px) / 3600));
+  }
 }
 
 @media (max-width: 750px) {
@@ -3075,6 +3216,13 @@ body._touch .menu__list li:last-child {
 @media (max-width: 725px) {
   .footer__info-part {
     display: block;
+  }
+}
+
+@media (max-width: 619px) {
+  .consult-item-img {
+    height: 90%;
+    padding-bottom: 0;
   }
 }
 
@@ -3131,14 +3279,6 @@ body._touch .menu__list li:last-child {
   .swiper-button-next,
   .swiper-button-prev {
     width: 40px;
-  }
-
-  .swiper-button-next {
-    right: 1%;
-  }
-
-  .swiper-button-prev {
-    left: 1%;
   }
 }
 
@@ -3241,6 +3381,12 @@ body._touch .menu__list li:last-child {
 @media (min-width: 100px) and (max-width: 500px) {
   .button-sub {
     width: 200px;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 767px) {
+  .infoblock__poster-element-text-title {
+    font-size: calc(16px + 6.8 * ((100vw - 320px) / 3600));
   }
 }
 
