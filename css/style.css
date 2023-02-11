@@ -1034,9 +1034,6 @@ swiper-container .swiper-notification {
           transform: rotate(180deg);
 }
 
-.no-webp body{
-  background-image: url("/src/img/AR-181019991.jpg"); }
-
 body {
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
@@ -3573,5 +3570,3 @@ body._touch .menu__list li:last-child {
     font-size: calc(18px + -4 * (100vw / 3600));
   }
 }
-
-.webp body{ background-image: url(/src/img/AR-181019991.webp); }
