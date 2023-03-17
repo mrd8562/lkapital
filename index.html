@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230212001345">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap&_v=20230212001345" rel="stylesheet"> -->
-
-  <title>Финансовая консультация - Личный капитал</title>
+  <link rel="stylesheet" href="css/head-foot.min.css?_v=20230317185008">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230317185008">
+  <title>Главная - Личный капитал</title>
 </head>
-  <body>
-    
-    <header class="header">
+
+<body>
+
+  <header class="header">
   <div class="header__container">
     <a href="/" class="header__logo">
-      <img class="logo__img" src="img/Logo.svg" alt="">
-      <picture><source srcset="img/Logo-mobile.webp" type="image/webp"><img class="logo__img-mobile" src="img/Logo-mobile.png" alt=""></picture>
+      <svg class="logo__img">
+        <use xlink:href="img/sp/icons.svg#Logo" />
+        </use>
+      </svg>
+      <svg class="logo__img-mobile">
+        <use xlink:href="img/sp/icons.svg#Logo-mobile" />
+        </use>
+      </svg>
     </a>
     <div class="header__menu menu">
       <div class="menu__icon">
@@ -24,9 +30,9 @@
       <nav class="menu__body">
         <ul class="menu__list">
           <li>
-            <span class="menu__arrow first"></span>
+            <span class="menu__arrow first has-sub"></span>
             <a href="" class="menu__link-sub">Услуги</a>
-            <span class="menu__arrow second"></span>
+            <span class="menu__arrow second has-sub"></span>
             <ul class="menu__sub-list">
               <li>
                 <a href="" class="menu__sub-link">Финансовая консультация</a>
@@ -65,9 +71,9 @@
           </li>
           <li><a href="" class="menu__link">Консультанты</a></li>
           <li>
-            <span class="menu__arrow first"></span>
+            <span class="menu__arrow first has-sub"></span>
             <a href="" class="menu__link-sub">База знаний</a>
-            <span class="menu__arrow second"></span>
+            <span class="menu__arrow second has-sub"></span>
             <ul class="menu__sub-list">
               <li>
                 <a href="" class="menu__sub-link">Все статьи</a>
@@ -90,9 +96,9 @@
             </ul>
           </li>
           <li>
-            <span class="menu__arrow first"></span>
+            <span class="menu__arrow first has-sub"></span>
             <a href="" class="menu__link-sub">О компании</a>
-            <span class="menu__arrow second"></span>
+            <span class="menu__arrow second has-sub"></span>
             <ul class="menu__sub-list">
               <li>
                 <a href="" class="menu__sub-link">Новости</a>
@@ -101,7 +107,7 @@
                 <a href="" class="menu__sub-link">Клуб инвесторов</a>
               </li>
               <li>
-                <a href="" class="menu__sub-link">Сведения об Образовательной 
+                <a href="" class="menu__sub-link">Сведения об Образовательной
                   организации</a>
               </li>
               <li>
@@ -113,7 +119,10 @@
           <li>
             <span class="menu__arrow first"></span>
             <a href="" class="menu__link mobile">
-              <img class="infoblock__poster-img" src="img/school-logo.svg" alt="школа"></img>
+              <svg class="infoblock__poster-img">
+                <use xlink:href="img/sp/icons.svg#school-logo" />
+                </use>
+              </svg>
               <div class="infoblock__poster-element-text">
                 <p class="infoblock__poster-element-text-title">Школа<br>Владимира Савенка</p>
               </div>
@@ -134,11 +143,14 @@
         </ul>
       </nav>
     </div>
-    
+
     <div class="header__infoblock infoblock">
       <div class="infoblock__poster">
         <a href="" class="infoblock__poster-link">
-          <img class="infoblock__poster-img" src="img/school-logo.svg" alt="школа"></img>
+          <svg class="infoblock__poster-img">
+            <use xlink:href="img/sp/icons.svg#school-logo" />
+            </use>
+          </svg>
           <div class="infoblock__poster-element-text">
             <p class="infoblock__poster-element-text-title">Школа<br>Владимира Савенка</p>
           </div>
@@ -158,65 +170,18 @@
       </div>
       <div class="infoblock__phone">
         <a class="infoblock__phone-logo" href="tel:+7 (964) 577-97-76">
-        
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  width="50px" height="48px" viewBox="0 0 47 47" xml:space="preserve">
-  <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)">
-    <path d="M231.7,975.6c-35.8,1.1-54.3-3.4-61-15c-5.1-8.7,12.7-101.5,21-109.6c2.7-2.6,14.4-7.9,26.4-11.8
-		c12-3.8,23.4-8.9,25.2-10.6c4.7-4.7,7.7-126.7,3.5-135.1c-1.7-4.1-12.9-10.1-24.4-13.5c-11.9-3.1-23.7-8.6-26.5-11.5
-		c-8.3-8.4-23.1-100.9-17.4-110c7.2-11.7,25.9-16.4,61.6-15.8c36,0.9,40.6,4.4,57.6,40c18.2,37.9,26.9,98.3,25.7,175.9
-		c-1.8,77.6-12.8,138.1-32.4,176.2C272.5,970.7,267.8,974.3,231.7,975.6z M277.7,926.3c16.3-32.6,26-85,28.2-153.8
-		c4.6-119.7-16.4-206.1-51.4-213.2c-12.4-2.5-57.8,1.8-62,5.9c-3,2.9,11.4,87.9,15.4,92c1.4,1.4,13.8,5.7,28,10
-		c24.6,7.1,25.1,7.7,27.8,20.5c3.5,16.5,1.4,126.3-2.7,142.9c-3.1,12.8-3.7,13.4-28.6,20.8c-14.3,4.4-26.9,8.9-28.4,10.3
-		c-5.3,5.3-21.2,89.9-17.8,93.3c6.8,6.9,67,6.3,74.1-0.7C263.9,950.8,271.7,937.9,277.7,926.3z" />
-  </g>
-</svg>
-</a>
-<a class="infoblock__phone-logo" href="tel:+7 (964) 577-97-76">
-  <svg version="1.1" id="tel_mob" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-    y="0px" width="45px" height="45px" viewBox="0 0 792 792" xml:space="preserve">
-    <g>
-      <path d="M521.806,792c0,0,71.889,0,71.889-71.997V71.997C593.694,0,521.806,0,521.806,0H270.194c0,0-71.889,0-71.889,71.997
-          v648.006C198.306,792,270.194,792,270.194,792H521.806z M396,762.022c-19.841,0-35.944-16.104-35.944-35.944
-          c0-19.842,16.103-35.944,35.944-35.944c19.842,0,35.944,16.103,35.944,35.944C431.944,745.919,415.842,762.022,396,762.022z
-           M342.083,43.888c0-4.457,2.121-7.944,4.78-7.944h98.272c2.624,0,4.781,3.559,4.781,7.944v2.121c0,4.457-2.157,7.944-4.781,7.944
-          h-98.272c-2.624,0-4.78-3.559-4.78-7.944V43.888z M234.25,89.861h323.5v575.111h-323.5V89.861z"></path>
-    </g>
-    <g>
-    </g>
-    <g>
-    </g>
-    <g>
-    </g>
-    <g>
-    </g>
-    <g>
-    </g>
-    <g>
-    </g>
-    <g>
-    </g>
-    <g>
-    </g>
-    <g>
-    </g>
-    <g>
-    </g>
-    <g>
-    </g>
-    <g>
-    </g>
-    <g>
-    </g>
-    <g>
-    </g>
-    <g>
-    </g>
-  </svg>
+          <svg class="tr__img">
+            <use xlink:href="img/sp/icons.svg#tr" />
+            </use>
+          </svg>
         </a>
-        
+        <a class="infoblock__phone-logo" href="tel:+7 (964) 577-97-76">
+          <svg class="phone__img">
+            <use xlink:href="img/sp/icons.svg#phone" />
+            </use>
+          </svg>
+        </a>
+
       </div>
       <div class="infoblock__phone-number">
         <a href="tel:+7 (495) 625-35-03" class="infoblock__phone-link">+7 (495) 625-35-03</a>
@@ -225,201 +190,428 @@
     </div>
   </div>
 </header>
-    <main class="main">
-      <div class="service__wrapper">
-      <article class="service">
-        
-          <div class="service__breadcrumbs">
-            <span>
-              <a href="#" class="service__link">Главная</a>
-              »
-              <a href="#" class="service__link">Услуги</a> 
-              »
-              <span>Личный финансовый план</span>
-            </span>
-          </div>
-          <div class="service__item">
-            <div class="service__title">
-              <h1 class="service__title-text">Личный финансовый план</h1>
-            </div>
-            <div class="service__paragraf">
-              <p class="service__paragraf-text">Это основной инструмент управления личными финансами, пошаговое руководство по достижению ваших финансовых целей - получение пассивного дохода на пенсии, образование детей, покупка недвижимости, автомобиля и т.д.</p>
-              <p class="service__paragraf-text">Личный финансовый план  дает вам цельную финансовую картину будущего и показывает: как распределить деньги и как их накапливать,  чтобы необходимая сумма была получена к нужному сроку.</p>
-              <p class="service__paragraf-text bold">План дает четкое понимание:</p>
-              <ul class="service__list">
-                <li>как будет расти капитал при инвестировании определенной вами суммы и выбранной стратегии инвестирования;</li>
-                <li>хватит ли средств на финансирование всех целей;</li>
-                <li>какие суммы необходимо инвестировать, чтобы достичь всех ваших целей;</li>
-                <li>из каких активов будут изыматься средства на финансирование целей;</li>
-                <li>какую сумму вы накопите к окончанию плана;</li>
-                <li>какой пассивный доход с капитала вы сможете получать.</li>
-              </ul>
-              <p class="service__paragraf-text">Личный финансовый план может быть Инвестиционным или Комплексным.</p>
-              <p class="service__paragraf-text">Инвестиционный план строится на основе сумм, которые вы готовы инвестировать регулярно или единовременно.
-                В рамках плана мы обозначим конкретные способы инвестирования, построим график инвестирования, выскажем свое мнение об инвестиционных инструментах.</p>
-              <p class="service__paragraf-text">Комплексный план предполагает более глубокий анализ вашей текущей ситуации, а при необходимости корректировку и оптимизацию вашего бюджета.</p>
-              <p class="service__paragraf-text">Мы определим финансовые возможности, рассчитаем суммы, которые вы сможете использовать для накопления и инвестирования, разработаем Инвестиционный план.</p>
-              <p class="service__paragraf-text">
-                <a class="paragraf-text-link" href="#"><strong>Для чего нужен личный
-                  финансовый план? </strong></a>
-                В статье Владимира Савенка.
+  <main class="main">
+    <div class="service__wrapper1">
+      <article class="service__first-screen">
+        <div class="service__first-screen-bg">
+          <picture><source srcset="img/main-page/first-screen-geomethry.webp" type="image/webp"><img class="img-geometry" src="img/main-page/first-screen-geomethry.png" alt="вспомагательное изображение"></picture>
+        </div>
+        <div class="service__first-screen-wr">
+          <div class="service__first-screen-items">
+            <div class="service__first-screen-left">
+              <h1 class="article-header">Личный капитал</h1>
+              <p class="first-screen-description">
+                Надежные инвестиции в России и за рубежом. <br>Помогаем нашим клиентам повысить качество жизни, сохранить и приумножить деньги, защитить финансово себя и своих близких
               </p>
-              <p class="service__paragraf-text">
-                <a class="paragraf-text-link" href="#"><strong>Подробнее о Личном финансовом плане</strong></a>
-              </p>
-
+            </div>
+            <div class="service__first-screen-right">
+              <a href="https://edu.lk-school.ru/course?roistat_visit=659322">
+                <img class="img__first-screen" src="img/main-page/22-marta.gif" alt="личный капитал">
+              </a>
             </div>
           </div>
-          <div class="service__item">
-            <div class="service__title">
-              <h1 class="service__title-text">Как получить услугу:</h1>
-            </div>
-            <article class="service__program">
-              <div class="service__program-wrapper">
-                <div class="service__program-content">
-                  <div class="service__program-item">
-                    <div class="item__time">
-                      <p class="service__paragraf-text">1</p>
-                    </div>
-                    <div class="item__marker"></div>
-                    <div class="item__title">
-                      <h3 class="item__title-text">Оставьте заявку на бесплатную консультацию - заполните форму.</h3>
-                    </div>
-                  </div>
-                  <div class="service__program-item">
-                    <div class="item__time">
-                      <p class="service__paragraf-text">2</p>
-                    </div>
-                    <div class="item__marker"></div>
-                    <div class="item__title">
-                      <h3 class="item__title-text">В течение рабочего дня с вами свяжется финансовый консультант, согласует удобное
-                        время для консультации.</h3>
-                    </div>
-                  </div>
-                  <div class="service__program-item">
-                    <div class="item__time">
-                      <p class="service__paragraf-text">3</p>
-                    </div>
-                    <div class="item__marker"></div>
-                    <div class="item__title">
-                      <h3 class="item__title-text">После консультации вы заполняете анкету, указываете свои цели, сроки их достижения, структуру доходов и расходов, активов и пассивов, а также другую информацию, которую необходимо учесть при разработке вашего плана.</h3>
-                    </div>
-                  </div>
-                  <div class="service__program-item">
-                    <div class="item__time">
-                      <p class="service__paragraf-text">4</p>
-                    </div>
-                    <div class="item__marker"></div>
-                    <div class="item__title">
-                      <h3 class="item__title-text">После получения анкеты и оплаты услуги ваш консультант назначает следующую встречу для согласования вводных данных.</h3>
-                    </div>
-                  </div>
-                  <div class="service__program-item">
-                    <div class="item__time">
-                      <p class="service__paragraf-text">5</p>
-                    </div>
-                    <div class="item__marker"></div>
-                    <div class="item__title">
-                      <h3 class="item__title-text">На основании полученных данных консультант готовит расчет ЛФП с четкими рекомендациями и конкретными шагами по достижению ваших финансовых целей, анализом ситуации, способов и стратегии инвестирования.</h3>
-                    </div>
-                  </div>
-                  <div class="service__program-item">
-                    <div class="item__time">
-                      <p class="service__paragraf-text">6</p>
-                    </div>
-                    <div class="item__marker"></div>
-                    <div class="item__title">
-                      <h3 class="item__title-text">После согласования плана ваш консультант помогает в открытии необходимых счетов в России или за рубежом, вы начинаете реализацию вашего Личного финансового плана.</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="service__buton">
-                  <a href="" class="service__buton-button-custom-lfp">
-                    <span class="button-text">Посмотреть пример ЛФП</span>
-                  </a>
-              </div>
-            </article>
-            
-          </div>
-
-          <div class="service__item">
-            <div class="service__content">
-              <div class="service__tool-item-wr">
-              <div class="service__tool-item-wr-padding">
-                <div class="service__tool-item">
-                  <div class="tool-item-img">
-                    <img class="item-img" src="img/icons-article_Arrow.svg" alt="arrow">
-                  </div>
-                  <div class="tool-item-text">
-                    <p class="item-text">Опытные консультанты проанализируют вашу финансовую ситуацию, помогут определить финансовые цели и ресурсы для их достижения, выскажут свое мнение об инвестиционных инструментах и рынках</p>
-                  </div>
-                </div>
-              </div>
-              <div class="service__tool-item-wr-padding">
-                <div class="service__tool-item">
-                  <div class="tool-item-img">
-                    <img class="item-img" src="img/2.svg" alt="planet">
-                  </div>
-                  <div class="tool-item-text">
-                    <p class="item-text">В рамках разработки инвестиционного плана консультанты помогут в открытии необходимых для инвестирования счетов в России и за рубежом</p>
-                  </div>
-                </div>
-              </div>
-              <div class="service__tool-item-wr-padding">
-                <div class="service__tool-item">
-                  <div class="tool-item-img">
-                    <img class="item-img" src="img/icons-article-02.svg" alt="glass">
-                  </div>
-                  <div class="tool-item-text">
-                    <p class="item-text">В результате построения личного финансового плана вы получите пошаговый план по достижению долгосрочных финансовый целей</p>
-                  </div>
-                </div>
-              </div>
-              <div class="service__tool-item-wr-padding">
-                <div class="service__tool-item">
-                  <div class="tool-item-img">
-                    <img class="item-img" src="img/icons-article_Manager.svg" alt="manager">
-                  </div>
-                  <div class="tool-item-text">
-                    <p class="item-text">Не забывайте про корректировку ЛФП. Новые жизненные обстоятельства, рост доходов или расходов, изменение целей, появление новых обязательств – все это влияет на вашу жизнь</p>
-                  </div>
-                </div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="service__item">
-            <div class="service__title">
-              <h1 class="service__title-text bold">Работаем с клиентами по всему миру</h1>
-            </div>
-            <div class="service__form">
-            </div>
-          </div>
-          
-          
-        
-        
+        </div>
       </article>
-      <article class="service">
-          <div class="service__form-block">
-            <form action="#" class="form-question">
-              <h3 class="form-title-text">Заполните форму, мы свяжемся с вами.</h3>
-              <label>
-                <input type="text" size="40" class="textbox" name="you-name" placeholder="Ваше имя">
-              </label>
-              <label>
-                <input type="tel" size="40" class="textbox" name="you-phone" placeholder="Ваш телефон">
-              </label>
-              <label>
-                <input type="email" size="40" class="textbox" name="you-email" placeholder="Электронная почта">
-              </label>
-              <label>
-                <input type="ttextel" size="40" class="textbox" name="you-promokod" placeholder="Промокод">
-              </label>
-              <label>
-                <input type="text" size="40" class="textbox" name="you-message" placeholder="Комментарий">
-              </label>
+
+      <article class="service__articles">
+        <div class="service__articles-slider swiper">
+          <div class="service__articles-slider-wrapper swiper-wrapper">
+            <a href="#" class="articles-item swiper-slide">
+              <div class="articles-wr">
+                <div class="articles-img-block">
+                  <picture><source srcset="img/main-page/signature-bank-stock.webp" type="image/webp"><img src="img/main-page/signature-bank-stock.jpg" alt="изображение статьи" class="articles-img"></picture>
+                </div>
+                <div class="articles-text-part">
+                  <p class="articles-text">
+                    Новости
+                    <svg class="articles-arrow">
+                      <use xlink:href="img/sp/icons.svg#articles-arrow"></use>
+                    </svg>
+                  </p>
+                  <p class="articles-descriprion-text">Silvergate, Silicon Valley Bank, Signature Bank — банкроты</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="articles-item swiper-slide">
+              <div class="articles-wr">
+                <div class="articles-img-block">
+                  <picture><source srcset="img/main-page/signature-bank-stock.webp" type="image/webp"><img src="img/main-page/signature-bank-stock.jpg" alt="изображение статьи" class="articles-img"></picture>
+                </div>
+                <div class="articles-text-part">
+                  <p class="articles-text">
+                    Новости
+                    <svg class="articles-arrow">
+                      <use xlink:href="img/sp/icons.svg#articles-arrow"></use>
+                    </svg>
+                  </p>
+                  <p class="articles-descriprion-text">Silvergate, Silicon Valley Bank, Signature Bank — банкроты</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="articles-item swiper-slide">
+              <div class="articles-wr">
+                <div class="articles-img-block">
+                  <picture><source srcset="img/main-page/signature-bank-stock.webp" type="image/webp"><img src="img/main-page/signature-bank-stock.jpg" alt="изображение статьи" class="articles-img"></picture>
+                </div>
+                <div class="articles-text-part">
+                  <p class="articles-text">
+                    Новости
+                    <svg class="articles-arrow">
+                      <use xlink:href="img/sp/icons.svg#articles-arrow"></use>
+                    </svg>
+                  </p>
+                  <p class="articles-descriprion-text">Silvergate, Silicon Valley Bank, Signature Bank — банкроты</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-button-prev">
+            <svg class="swiper__button-prev">
+              <use xlink:href="img/sp/icons.svg#scroll" />
+              </use>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg class="swiper__button-next">
+              <use xlink:href="img/sp/icons.svg#scroll" />
+              </use>
+            </svg>
+          </div>
+        </div>
+      </article>
+
+      <article class="service__interview">
+        <div class="service__title">
+          <h2 class="service__title-text medium">Интервью с клиентами компании</h2>
+        </div>
+        <div class="service__articles-slider swiper">
+          <div class="service__articles-slider-wrapper swiper-wrapper">
+            <a href="#" class="articles-item swiper-slide">
+              <div class="articles-wr">
+                <div class="articles-img-block">
+                  <picture><source srcset="img/main-page/1mater.webp" type="image/webp"><img src="img/main-page/1mater.jpg" alt="изображение интервью" class="articles-img"></picture>
+                </div>
+                <div class="articles-text-part">
+                  <p class="articles-text">
+                    Сергей Рязанский
+                    <svg class="articles-arrow">
+                      <use xlink:href="img/sp/icons.svg#articles-arrow"></use>
+                    </svg>
+                  </p>
+                  <p class="articles-descriprion-text"> – российский космонавт-испытатель отряда космонавтов Роскосмоса.
+                    535-й космонавт мира и 117-й космонавт России. Герой Российской Федерации,
+                    лётчик-космонавт Российской Федерации. Первый в мире учёный — командир космического
+                    корабля.
+                </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="articles-item swiper-slide">
+              <div class="articles-wr">
+                <div class="articles-img-block">
+                  <picture><source srcset="img/main-page/signature-bank-stock.webp" type="image/webp"><img src="img/main-page/signature-bank-stock.jpg" alt="изображение статьи" class="articles-img"></picture>
+                </div>
+                <div class="articles-text-part">
+                  <p class="articles-text">
+                    Новости
+                    <svg class="articles-arrow">
+                      <use xlink:href="img/sp/icons.svg#articles-arrow"></use>
+                    </svg>
+                  </p>
+                  <p class="articles-descriprion-text">Silvergate, Silicon Valley Bank, Signature Bank — банкроты</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="articles-item swiper-slide">
+              <div class="articles-wr">
+                <div class="articles-img-block">
+                  <picture><source srcset="img/main-page/signature-bank-stock.webp" type="image/webp"><img src="img/main-page/signature-bank-stock.jpg" alt="изображение статьи" class="articles-img"></picture>
+                </div>
+                <div class="articles-text-part">
+                  <p class="articles-text">
+                    Новости
+                    <svg class="articles-arrow">
+                      <use xlink:href="img/sp/icons.svg#articles-arrow"></use>
+                    </svg>
+                  </p>
+                  <p class="articles-descriprion-text">Silvergate, Silicon Valley Bank, Signature Bank — банкроты</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-button-prev">
+            <svg class="swiper__button-prev">
+              <use xlink:href="img/sp/icons.svg#scroll" />
+              </use>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg class="swiper__button-next">
+              <use xlink:href="img/sp/icons.svg#scroll" />
+              </use>
+            </svg>
+          </div>
+        </div>
+      </article>
+
+      <article class="service__targets">
+        <div class="service__title">
+          <h2 class="service__title-text medium">Наша задача - помочь вам в достижении<br>ваших финансовых целей</h2>
+        </div>
+        <div class="service__work">
+          <div class="service__work-item">
+            <div class="service__work-img">
+              <svg class="a-work-img">
+                <use xlink:href="img/sp/icons.svg#clients"></use>
+              </svg>
+            </div>
+            <div class="service__work-text">
+              <h3 class="work-head">12 172 клиента компании</h3>
+              <p class="word-description">Большинство работают с нами на постоянной основе</p>
+            </div>
+          </div>
+          <div class="service__work-item">
+            <div class="service__work-img">
+              <svg class="a-work-img">
+                <use xlink:href="img/sp/icons.svg#tree"></use>
+              </svg>
+            </div>
+            <div class="service__work-text">
+              <h3 class="work-head">Решения в интересах клиента</h3>
+              <p class="word-description">Получаем доход от консалтинга, а не от комиссий финансовых институтов. Не зависим от банков, брокеров, управляющих компаний и др.</p>
+            </div>
+          </div>
+          <div class="service__work-item">
+            <div class="service__work-img">
+              <svg class="a-work-img">
+                <use xlink:href="img/sp/icons.svg#calendar"></use>
+              </svg>
+            </div>
+            <div class="service__work-text">
+              <h3 class="work-head">Работаем с 2006 года</h3>
+              <p class="word-description">Мы первая компания, сделавшая услуги независимых финансовых консультантов доступными. У нас большой практический опыт работы на российском и зарубежном рынках</p>
+            </div>
+          </div>
+          <div class="service__work-item">
+            <div class="service__work-img">
+              <svg class="a-work-img">
+                <use xlink:href="img/sp/icons.svg#briefcase"></use>
+              </svg>
+            </div>
+            <div class="service__work-text">
+              <h3 class="work-head">Практические решения</h3>
+              <p class="word-description">Все наши специалисты сами являются успешными инвесторами и предлагают только проверенные на практике решения</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="service__services">
+        <div class="service__title">
+          <h2 class="service__title-text medium">Наши услуги</h2>
+        </div>
+        <div class="service__grid-container">
+          <div class="grid-item full-grid-item">
+            <div class="item-inner">
+              <div class="bg-img">
+                <picture><source srcset="img/main-page/3-layers.webp" type="image/webp"><img src="img/main-page/3-layers.png" alt="индивидуальная консультация"></picture>
+              </div>
+              <div class="grid-block-text">
+                <h2 class="grid-block-head">
+                  Индивидуальная<br>консультация
+                </h2>
+                <div class="masonry-outher">
+                  <div class="masonry-inner">
+                    <p class="inner-text">
+                      Финансовая консультация направлена на решение вопросов, которые помогут вам оперативно принять грамотные стратегические решения по управлению личными финансами и инвестированию..
+                    </p>
+                    <a href="https://lkapital.ru/uslugi/konsultatsii/" class="consult-slider-link">
+                      <span class="consult-link-text">Подробнее</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item full-grid-item">
+            <div class="item-inner">
+              <div class="bg-img">
+                <picture><source srcset="img/main-page/2-layerssss.webp" type="image/webp"><img src="img/main-page/2-layerssss.png" alt="личный финансовый план"></picture>
+              </div>
+              <div class="grid-block-text">
+                <h2 class="grid-block-head blue-text">
+                  Личный финансовый <br> план
+                </h2>
+                <div class="masonry-outher">
+                  <div class="masonry-inner">
+                    <p class="inner-text">
+                      Финансовая консультация направлена на решение вопросов, которые помогут вам оперативно принять грамотные стратегические решения по управлению личными финансами и инвестированию..
+                    </p>
+                    <a href="https://lkapital.ru/uslugi/konsultatsii/" class="consult-slider-link">
+                      <span class="consult-link-text">Подробнее</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item small-grid-item">
+            <div class="item-inner">
+              <div class="bg-img">
+                <picture><source srcset="img/main-page/2-layersqwsq.webp" type="image/webp"><img src="img/main-page/2-layersqwsq.png" alt="индивидуальное сопровождение клиента"></picture>
+              </div>
+              <div class="grid-block-text">
+                <h2 class="grid-block-head">
+                  Индивидуальное <br>сопровождение<br> клиента
+                </h2>
+                <div class="masonry-outher">
+                  <div class="masonry-inner">
+                    <p class="inner-text">
+                      Финансовая консультация направлена на решение вопросов, которые помогут вам оперативно принять грамотные стратегические решения по управлению личными финансами и инвестированию..
+                    </p>
+                    <a href="https://lkapital.ru/uslugi/konsultatsii/" class="consult-slider-link">
+                      <span class="consult-link-text">Подробнее</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item small-grid-item">
+            <div class="item-inner">
+              <div class="bg-img">
+                <picture><source srcset="img/main-page/second-opinion.webp" type="image/webp"><img src="img/main-page/second-opinion.png" alt="второе мнение"></picture>
+              </div>
+              <div class="grid-block-text">
+                <h2 class="grid-block-head blue-text">
+                  Второе мнение
+                </h2>
+                <div class="masonry-outher">
+                  <div class="masonry-inner">
+                    <p class="inner-text">
+                      Финансовая консультация направлена на решение вопросов, которые помогут вам оперативно принять грамотные стратегические решения по управлению личными финансами и инвестированию..
+                    </p>
+                    <a href="https://lkapital.ru/uslugi/konsultatsii/" class="consult-slider-link">
+                      <span class="consult-link-text">Подробнее</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item small-grid-item">
+            <div class="item-inner">
+              <div class="bg-img">
+                <picture><source srcset="img/main-page/sw.webp" type="image/webp"><img src="img/main-page/sw.png" alt="инвестиционное решение"></picture>
+              </div>
+              <div class="grid-block-text">
+                <h2 class="grid-block-head">
+                  Инвестиционное<br>решение
+                </h2>
+                <div class="masonry-outher">
+                  <div class="masonry-inner">
+                    <p class="inner-text">
+                      Финансовая консультация направлена на решение вопросов, которые помогут вам оперативно принять грамотные стратегические решения по управлению личными финансами и инвестированию..
+                    </p>
+                    <a href="https://lkapital.ru/uslugi/konsultatsii/" class="consult-slider-link">
+                      <span class="consult-link-text">Подробнее</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item full-grid-item">
+            <div class="item-inner">
+              <div class="bg-img">
+                <picture><source srcset="img/main-page/about-img44.webp" type="image/webp"><img src="img/main-page/about-img44.png" alt="инвестиции с investors trust"></picture>
+              </div>
+              <div class="grid-block-text">
+                <h2 class="grid-block-head">
+                  Инвестиции с Investors Trust
+                </h2>
+                <div class="masonry-outher">
+                  <div class="masonry-inner">
+                    <p class="inner-text">
+                      Финансовая консультация направлена на решение вопросов, которые помогут вам оперативно принять грамотные стратегические решения по управлению личными финансами и инвестированию..
+                    </p>
+                    <a href="https://lkapital.ru/uslugi/konsultatsii/" class="consult-slider-link">
+                      <span class="consult-link-text">Подробнее</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item full-grid-item">
+            <div class="item-inner">
+              <div class="bg-img">
+                <picture><source srcset="img/main-page/calculator-img6.webp" type="image/webp"><img src="img/main-page/calculator-img6.png" alt="коучинг владимира савенка"></picture>
+              </div>
+              <div class="grid-block-text">
+                <h2 class="grid-block-head blue-text">
+                  Коучинг Владимира Савенка
+                </h2>
+                <div class="masonry-outher">
+                  <div class="masonry-inner">
+                    <p class="inner-text">
+                      Финансовая консультация направлена на решение вопросов, которые помогут вам оперативно принять грамотные стратегические решения по управлению личными финансами и инвестированию..
+                    </p>
+                    <a href="https://lkapital.ru/uslugi/konsultatsii/" class="consult-slider-link">
+                      <span class="consult-link-text">Подробнее</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="service__form">
+        <div class="service__consult-inner">
+          <div class="service__consult-elements">
+            <h3 id="text1" class="consult-title">Заполните форму, финансовый <br> консультант ответит на Ваш запрос</h3>
+            <a id="but1" class="consult-btn margin">Подать заявку</a>
+            <h3 id="text2" class="consult-title">Работаем с клиентами по всему миру</h3>
+            <div class="alert-success hidden">
+              <div class="alert-container">
+                <div class="img-container">
+                  <svg class="thank-img">
+                    <use xlink:href="img/sp/icons.svg#thank"></use>
+                  </svg>
+                </div>
+                <div class="text-container">
+                  <h2 class="thank-tittle-text">Спасибо за вашу заявку</h2>
+                  <p class="thank-decs-text">Мы свяжемся с вами в течение рабочего дня.</p>
+                </div>
+              </div>
+            </div>
+            <form class="form-main hidden-consult">
+              <h3 class="form-title-text">Оставьте заявку, мы свяжемся с вами в течение рабочего дня.</h3>
+              <div class="form-inputs">
+                <label>
+                  <select name="service-type" class="textbox" width="40">
+                    <option value="Консультации по личному инвестированию">Финансовая консультация</option>
+                    <option value="Личный финансовый план">Личный финансовый план</option>
+                    <option value="Индивидуальное сопровождение">Индивидуальное сопровождение</option>
+                    <option value="Второе мнение">Второе мнение</option>
+                    <option value="Инвестиционное решение">Инвестиционное решение</option>
+                  </select>
+                </label>
+                <label>
+                  <input type="text" size="40" class="textbox" name="you-name" placeholder="Ваше имя">
+                </label>
+                <label>
+                  <input type="tel" size="40" class="textbox" name="you-phone" placeholder="Ваш телефон">
+                </label>
+                <label>
+                  <input type="email" size="40" class="textbox" name="you-email" placeholder="Электронная почта">
+                </label>
+                <label>
+                  <input type="text" size="40" class="textbox" name="you-message" placeholder="Задайте ваш вопрос">
+                </label>
+              </div>
               <div class="form-checkbox">
                 <label>
                   <input type="checkbox" class="checkbox" checked="checked">
@@ -430,34 +622,300 @@
                   <span class="text-checked">Согласие на обработку персональных данных</span>
                 </label>
                 <div class="button-form">
-                  <input type="submit" class="button-sub" value="Отправить">
+                  <input type="submit" class="button-sub" value="Отправить заявку">
                 </div>
-                <span class="spinner-element"></span>
-                
               </div>
               <div class="form__response-message">Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.</div>
             </form>
           </div>
+        </div>
       </article>
-      <article class="service">
-        <div class="service__wrapper">
-          <div class="service__center-text">
-            <p class="item-text">Стоимость услуг – в нашем 
-              <a href="#" class="text-link">прайс-листе</a>.
-            </p>
-            <p class="item-text">Вы всегда можете написать нам на <a href="#" class="text-link">zakaz@lkapital.ru</a> или позвонить с понедельника по пятницу с 10-00 до 18-00 по телефону +7 (495) 625-35-03.</p>
+      <script>
+        if (document.querySelector('.button-sub')) {
+        let button = document.querySelector('.button-sub');
+        button.addEventListener('click', function(){
+          let suc = document.querySelector('.form-main')
+          let alrt = document.querySelector('.alert-success')
+          suc.classList.toggle("hidden")
+          alrt.classList.toggle("hidden")
+        });
+      }
+      </script>
+      <article class="service__instruments">
+        <div class="service__item">
+          <div class="service__title">
+            <h2 class="service__title-text medium">Полезные инструменты для инвесторов</h2>
+          </div>
+          <div class="service__content">
+            <div class="service__tool-item-wrapper">
+              <div class="service__tool-item-wr-padding">
+                <a class="service__tool-hidden-link" href="#"></a>
+                <div class="service__tool-item">
+                  <div class="tool-item-img">
+                    <svg class="item-img speak"></svg>
+                  </div>
+                  <div class="tool-item-text">
+                    <h2 class="item-title-text margin">Ответы на любые вопросы</h2>
+                    <p class="item-text">связанные с личными финансами, в том числе пенсионным обеспечением,
+                      страхованием, налогами и т.д.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="service__tool-item-wr-padding">
+                <a class="service__tool-hidden-link" href="#"></a>
+                <div class="service__tool-item">
+                  <div class="tool-item-img">
+                    <svg class="item-img">
+                      <use xlink:href="img/sp/icons.svg#loop"/></use>
+                    </svg>
+                  </div>
+                  <div class="tool-item-text">
+                    <h2 class="item-title-text margin">Конкретные рекомендации</h2>
+                    <p class="item-text">по оптимизации ваших расходов и формированию капитала</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="service__tool-item-wr-padding">
+                <a class="service__tool-hidden-link" href="#"></a>
+                <div class="service__tool-item">
+                  <div class="tool-item-img">
+                    <svg class="item-img">
+                      <use xlink:href="img/sp/icons.svg#two-hand" /></use>
+                    </svg>
+                  </div>
+                  <div class="tool-item-text">
+                    <h2 class="item-title-text margin">Помощь</h2>
+                    <p class="item-text">в наведении порядка в ваших финансах и построении системы управления ими</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="service__tool-item-wr-padding">
+                <a class="service__tool-hidden-link" href="#"></a>
+                <div class="service__tool-item">
+                  <div class="tool-item-img">
+                    <svg class="item-img">
+                      <use xlink:href="img/sp/icons.svg#arrow-target" /></use>
+                    </svg>
+                  </div>
+                  <div class="tool-item-text">
+                    <h2 class="item-title-text margin">Конкретные рекомендации по вашей финансовой ситуации</h2>
+                    <p class="item-text">с чего и как начать, как выбрать посредника. План дальнейших шагов в достижении
+                      ваших финансовых целей</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </article>
 
-      <article class="service">
-        <div class="service__title">
-          <h1 class="service__title-text left">Финансовые консультанты</h1>
-        </div>
-        <div class="service__fin-slider swiper">
+      <article class="service__consult">
+
+
+
+        <div class="fin-slider-top swiper">
           <div class="service__fin-slider-wrapper swiper-wrapper">
-            <a href="#" class="consult-item swiper-slide">
-              <div class="consult-item-wrapper">
+            <div class="consult-item swiper-slide">
+              <div class="consult-item-wrapper big">
+                <div class="consult-item-img-block-big">
+                  <picture><source srcset="img/D2.webp" type="image/webp"><img src="img/D2.png" alt="D2" class="consult-item-img-big"></picture>
+                </div>
+                <div class="consult-item-text-block-big">
+                  <p class="consult-item-text big">Эффект дюрации</p>
+                  <p class="consult-item-descriprion-text big">Как управлять рисками при инвестировании в облигации? Отвечает Виталий Рунцо, финансовый консультант компании “Личный капитал”.</p>
+                  <a href="#" class="consult-btn left">
+                    <svg class="btn-img">
+                      <use xlink:href="img/sp/icons.svg#edit"></use>
+                    </svg>
+                    <span class="standart-text">
+                      Читать статью
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="consult-item swiper-slide">
+              <div class="consult-item-wrapper big">
+                <div class="consult-item-img-block-big">
+                  <picture><source srcset="img/D2.webp" type="image/webp"><img src="img/D2.png" alt="D2" class="consult-item-img-big"></picture>
+                </div>
+                <div class="consult-item-text-block-big">
+                  <p class="consult-item-text big">Эффект дюрации</p>
+                  <p class="consult-item-descriprion-text big">Как управлять рисками при инвестировании в облигации? Отвечает Виталий Рунцо, финансовый консультант компании “Личный капитал”.</p>
+                  <a href="#" class="consult-btn left">
+                    <svg class="btn-img">
+                      <use xlink:href="img/sp/icons.svg#edit"></use>
+                    </svg>
+                    <span class="standart-text">
+                      Читать статью
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="consult-item swiper-slide">
+              <div class="consult-item-wrapper big">
+                <div class="consult-item-img-block-big">
+                  <picture><source srcset="img/D2.webp" type="image/webp"><img src="img/D2.png" alt="D2" class="consult-item-img-big"></picture>
+                </div>
+                <div class="consult-item-text-block-big">
+                  <p class="consult-item-text big">Эффект дюрации</p>
+                  <p class="consult-item-descriprion-text big">Как управлять рисками при инвестировании в облигации? Отвечает Виталий Рунцо, финансовый консультант компании “Личный капитал”.</p>
+                  <a href="#" class="consult-btn left">
+                    <svg class="btn-img">
+                      <use xlink:href="img/sp/icons.svg#edit"></use>
+                    </svg>
+                    <span class="standart-text">
+                      Читать статью
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="consult-item swiper-slide">
+              <div class="consult-item-wrapper big">
+                <div class="consult-item-img-block-big">
+                  <picture><source srcset="img/D2.webp" type="image/webp"><img src="img/D2.png" alt="D2" class="consult-item-img-big"></picture>
+                </div>
+                <div class="consult-item-text-block-big">
+                  <p class="consult-item-text big">Эффект дюрации</p>
+                  <p class="consult-item-descriprion-text big">Как управлять рисками при инвестировании в облигации? Отвечает Виталий Рунцо, финансовый консультант компании “Личный капитал”.</p>
+                  <a href="#" class="consult-btn left">
+                    <svg class="btn-img">
+                      <use xlink:href="img/sp/icons.svg#edit"></use>
+                    </svg>
+                    <span class="standart-text">
+                      Читать статью
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="consult-item swiper-slide">
+              <div class="consult-item-wrapper big">
+                <div class="consult-item-img-block-big">
+                  <picture><source srcset="img/D2.webp" type="image/webp"><img src="img/D2.png" alt="D2" class="consult-item-img-big"></picture>
+                </div>
+                <div class="consult-item-text-block-big">
+                  <p class="consult-item-text big">Эффект дюрации</p>
+                  <p class="consult-item-descriprion-text big">Как управлять рисками при инвестировании в облигации? Отвечает Виталий Рунцо, финансовый консультант компании “Личный капитал”.</p>
+                  <a href="#" class="consult-btn left">
+                    <svg class="btn-img">
+                      <use xlink:href="img/sp/icons.svg#edit"></use>
+                    </svg>
+                    <span class="standart-text">
+                      Читать статью
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="consult-item swiper-slide">
+              <div class="consult-item-wrapper big">
+                <div class="consult-item-img-block-big">
+                  <picture><source srcset="img/D2.webp" type="image/webp"><img src="img/D2.png" alt="D2" class="consult-item-img-big"></picture>
+                </div>
+                <div class="consult-item-text-block-big">
+                  <p class="consult-item-text big">Эффект дюрации</p>
+                  <p class="consult-item-descriprion-text big">Как управлять рисками при инвестировании в облигации? Отвечает Виталий Рунцо, финансовый консультант компании “Личный капитал”.</p>
+                  <a href="#" class="consult-btn left">
+                    <svg class="btn-img">
+                      <use xlink:href="img/sp/icons.svg#edit"></use>
+                    </svg>
+                    <span class="standart-text">
+                      Читать статью
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="consult-item swiper-slide">
+              <div class="consult-item-wrapper big">
+                <div class="consult-item-img-block-big">
+                  <picture><source srcset="img/D2.webp" type="image/webp"><img src="img/D2.png" alt="D2" class="consult-item-img-big"></picture>
+                </div>
+                <div class="consult-item-text-block-big">
+                  <p class="consult-item-text big">Эффект дюрации</p>
+                  <p class="consult-item-descriprion-text big">Как управлять рисками при инвестировании в облигации? Отвечает Виталий Рунцо, финансовый консультант компании “Личный капитал”.</p>
+                  <a href="#" class="consult-btn left">
+                    <svg class="btn-img">
+                      <use xlink:href="img/sp/icons.svg#edit"></use>
+                    </svg>
+                    <span class="standart-text">
+                      Читать статью
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="consult-item swiper-slide">
+              <div class="consult-item-wrapper big">
+                <div class="consult-item-img-block-big">
+                  <picture><source srcset="img/D2.webp" type="image/webp"><img src="img/D2.png" alt="D2" class="consult-item-img-big"></picture>
+                </div>
+                <div class="consult-item-text-block-big">
+                  <p class="consult-item-text big">Эффект дюрации</p>
+                  <p class="consult-item-descriprion-text big">Как управлять рисками при инвестировании в облигации? Отвечает Виталий Рунцо, финансовый консультант компании “Личный капитал”.</p>
+                  <a href="#" class="consult-btn left">
+                    <svg class="btn-img">
+                      <use xlink:href="img/sp/icons.svg#edit"></use>
+                    </svg>
+                    <span class="standart-text">
+                      Читать статью
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="consult-item swiper-slide">
+              <div class="consult-item-wrapper big">
+                <div class="consult-item-img-block-big">
+                  <picture><source srcset="img/D2.webp" type="image/webp"><img src="img/D2.png" alt="D2" class="consult-item-img-big"></picture>
+                </div>
+                <div class="consult-item-text-block-big">
+                  <p class="consult-item-text big">Эффект дюрации</p>
+                  <p class="consult-item-descriprion-text big">Как управлять рисками при инвестировании в облигации? Отвечает Виталий Рунцо, финансовый консультант компании “Личный капитал”.</p>
+                  <a href="#" class="consult-btn left">
+                    <svg class="btn-img">
+                      <use xlink:href="img/sp/icons.svg#edit"></use>
+                    </svg>
+                    <span class="standart-text">
+                      Читать статью
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="consult-item swiper-slide">
+              <div class="consult-item-wrapper big">
+                <div class="consult-item-img-block-big">
+                  <picture><source srcset="img/D2.webp" type="image/webp"><img src="img/D2.png" alt="D2" class="consult-item-img-big"></picture>
+                </div>
+                <div class="consult-item-text-block-big">
+                  <p class="consult-item-text big">Эффект дюрации</p>
+                  <p class="consult-item-descriprion-text big">Как управлять рисками при инвестировании в облигации? Отвечает Виталий Рунцо, финансовый консультант компании “Личный капитал”.</p>
+                  <a href="#" class="consult-btn left">
+                    <svg class="btn-img">
+                      <use xlink:href="img/sp/icons.svg#edit"></use>
+                    </svg>
+                    <span class="standart-text">
+                      Читать статью
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fin-slider-thumbs swiper">
+          <div class="swiper-wrapper">
+            <div href="#" class="consult-item swiper-slide">
+              <div class="consult-item-wrapper swiper-slide">
                 <div class="consult-item-img-block">
                   <picture><source srcset="img/D2.webp" type="image/webp"><img src="img/D2.png" alt="D2" class="consult-item-img"></picture>
                 </div>
@@ -466,9 +924,9 @@
                   <p class="consult-item-descriprion-text">Ведущий финансовый консультант</p>
                 </div>
               </div>
-            </a>
-            <a href="#" class="consult-item swiper-slide">
-              <div class="consult-item-wrapper">
+            </div>
+            <div href="#" class="consult-item swiper-slide">
+              <div class="consult-item-wrapper swiper-slide">
                 <div class="consult-item-img-block">
                   <picture><source srcset="img/A4-2.webp" type="image/webp"><img src="img/A4-2.png" alt="A2" class="consult-item-img"></picture>
                 </div>
@@ -477,8 +935,8 @@
                   <p class="consult-item-descriprion-text">Финансовый и налоговый консультант</p>
                 </div>
               </div>
-            </a>
-            <a href="#" class="consult-item swiper-slide">
+            </div>
+            <div href="#" class="consult-item swiper-slide">
               <div class="consult-item-wrapper">
                 <div class="consult-item-img-block">
                   <picture><source srcset="img/E1.webp" type="image/webp"><img src="img/E1.png" alt="E1" class="consult-item-img"></picture>
@@ -488,8 +946,8 @@
                   <p class="consult-item-descriprion-text">Финансовый консультант</p>
                 </div>
               </div>
-            </a>
-            <a href="#" class="consult-item swiper-slide">
+            </div>
+            <div href="#" class="consult-item swiper-slide">
               <div class="consult-item-wrapper">
                 <div class="consult-item-img-block">
                   <picture><source srcset="img/V3.webp" type="image/webp"><img src="img/V3.png" alt="V3" class="consult-item-img"></picture>
@@ -499,8 +957,8 @@
                   <p class="consult-item-descriprion-text">Ведущий финансовый консультант</p>
                 </div>
               </div>
-            </a>
-            <a href="#" class="consult-item swiper-slide">
+            </div>
+            <div href="#" class="consult-item swiper-slide">
               <div class="consult-item-wrapper">
                 <div class="consult-item-img-block">
                   <picture><source srcset="img/33444.webp" type="image/webp"><img src="img/33444.png" alt="3344" class="consult-item-img"></picture>
@@ -510,8 +968,8 @@
                   <p class="consult-item-descriprion-text">Основатель и генеральный директор компании</p>
                 </div>
               </div>
-            </a>
-            <a href="#" class="consult-item swiper-slide">
+            </div>
+            <div href="#" class="consult-item swiper-slide">
               <div class="consult-item-wrapper">
                 <div class="consult-item-img-block">
                   <picture><source srcset="img/m.webp" type="image/webp"><img src="img/m.png" alt="M" class="consult-item-img"></picture>
@@ -521,8 +979,8 @@
                   <p class="consult-item-descriprion-text">Финансовый консультант</p>
                 </div>
               </div>
-            </a>
-            <a href="#" class="consult-item swiper-slide">
+            </div>
+            <div href="#" class="consult-item swiper-slide">
               <div class="consult-item-wrapper">
                 <div class="consult-item-img-block">
                   <picture><source srcset="img/sekr-sr.webp" type="image/webp"><img src="img/sekr-sr.png" alt="sekr" class="consult-item-img"></picture>
@@ -532,8 +990,8 @@
                   <p class="consult-item-descriprion-text">Финансовый консультант</p>
                 </div>
               </div>
-            </a>
-            <a href="#" class="consult-item swiper-slide">
+            </div>
+            <div href="#" class="consult-item swiper-slide">
               <div class="consult-item-wrapper">
                 <div class="consult-item-img-block">
                   <picture><source srcset="img/K2.webp" type="image/webp"><img src="img/K2.png" alt="K2" class="consult-item-img"></picture>
@@ -543,8 +1001,8 @@
                   <p class="consult-item-descriprion-text">Ведущий финансовый консультант</p>
                 </div>
               </div>
-            </a>
-            <a href="#" class="consult-item swiper-slide">
+            </div>
+            <div href="#" class="consult-item swiper-slide">
               <div class="consult-item-wrapper">
                 <div class="consult-item-img-block">
                   <picture><source srcset="img/ZH1.webp" type="image/webp"><img src="img/ZH1.png" alt="ZH1" class="consult-item-img"></picture>
@@ -554,8 +1012,8 @@
                   <p class="consult-item-descriprion-text">Финансовый консультант</p>
                 </div>
               </div>
-            </a>
-            <a href="#" class="consult-item swiper-slide">
+            </div>
+            <div href="#" class="consult-item swiper-slide">
               <div class="consult-item-wrapper">
                 <div class="consult-item-img-block">
                   <picture><source srcset="img/B3.webp" type="image/webp"><img src="img/B3.png" alt="B3" class="consult-item-img"></picture>
@@ -565,197 +1023,127 @@
                   <p class="consult-item-descriprion-text">Ведущий финансовый консультант</p>
                 </div>
               </div>
-            </a>
-            
-          </div>
-          <div class="swiper-button-prev">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74"
-              viewBox="0 0 74 74">
-              <defs>
-                <path class="circle" id="ond5a1" d="M1764.15 6577l19.84 20-19.84 20"></path>
-                <path class="shape" id="ond5b1" d="M1772 6560a37 37 0 1 1 0 74 37 37 0 0 1 0-74z"></path>
-                <clipPath id="ond5d1">
-                  <use fill="#fff" xlink:href="#ond5a1"></use>
-                </clipPath>
-                <clipPath id="ond5c1">
-                  <use xlink:href="#ond5b1"></use>
-                </clipPath>
-              </defs>
-              <g>
-                <g transform="translate(-1735 -6560)">
-                  <use fill="#009aff" xlink:href="#ond5b1"></use>
-                </g>
-                <g clip-path="url(#ond5c1)" transform="translate(-1735 -6560)">
-                  <use fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="6"
-                    clip-path="url(&quot;#ond5d1&quot;)" xlink:href="#ond5a1"></use>
-                </g>
-              </g>
+            </div>
+
+          </div> 
+           <div class="swiper-button-prev">
+            <svg class="swiper__button-prev">
+              <use xlink:href="img/sp/icons.svg#scroll" />
+              </use>
             </svg>
           </div>
           <div class="swiper-button-next">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74"
-              viewBox="0 0 74 74">
-              <defs>
-                <path class="circle" id="ond5a10" d="M1764.15 6577l19.84 20-19.84 20"></path>
-                <path class="shape" fill="#" id="ond5b10" d="M1772 6560a37 37 0 1 1 0 74 37 37 0 0 1 0-74z"></path>
-                <clipPath id="ond5d10">
-                  <use fill="#fff" xlink:href="#ond5a10"></use>
-                </clipPath>
-                <clipPath id="ond5c10">
-                  <use xlink:href="#ond5b10"></use>
-                </clipPath>
-              </defs>
-              <g>
-                <g transform="translate(-1735 -6560)">
-                  <use fill="#009aff" xlink:href="#ond5b10"></use>
-                </g>
-                <g clip-path="url(#ond5c10)" transform="translate(-1735 -6560)">
-                  <use fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="6"
-                    clip-path="url(&quot;#ond5d10&quot;)" xlink:href="#ond5a10"></use>
-                </g>
-              </g>
+            <svg class="swiper__button-next">
+              <use xlink:href="img/sp/icons.svg#scroll" />
+              </use>
+            </svg>
+          </div> 
+
+        
+      </article>
+
+      <article class="service__smi">
+        <h2 class="service__tittle">
+          <a href="#" class="tittle-link">Мы в СМИ</a>
+        </h2>
+        <div class="service__menu-slider swiper">
+          <div class="service__slider-wrapper swiper-wrapper">
+            <div class="news-item swiper-slide">
+              <div class="news-top-part">
+                <div class="check">
+                  <a href="#" class="img-news-link">
+                    <picture><source srcset="img/AR-181019991.webp" type="image/webp"><img src="img/AR-181019991.jpg" alt="news1" class="img-news"></picture>
+                  </a>
+                </div>
+              </div>
+              <div class="news-bottom-part">
+                <div class="date-part">
+                  <p class="date-text">20  ноября 2018</p>
+                </div>
+                <div class="bot-title-part">
+                  <h2 class="bot-title">
+                    <a href="#" class="bot-link-title">Возраст и риск. Можно ли гарантированно получать 20% годовой доходности?</a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="news-item swiper-slide">
+              <div class="news-top-part">
+                <div class="check">
+                  <a href="#" class="img-news-link">
+                    <picture><source srcset="img/When-To-Sell-Stocks-2.webp" type="image/webp"><img src="img/When-To-Sell-Stocks-2.jpg" alt="news1" class="img-news"></picture>
+                  </a>
+                </div>
+              </div>
+              <div class="news-bottom-part">
+                <div class="date-part">
+                  <p class="date-text">15  ноября 2018</p>
+                </div>
+                <div class="bot-title-part">
+                  <h2 class="bot-title">
+                    <a href="#" class="bot-link-title">Капитал в России – что делать? И не пора ли продавать акции? Ответы на ваши вопросы</a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="news-item swiper-slide">
+              <div class="news-top-part">
+                <div class="check">
+                  <a href="#" class="img-news-link">
+                    <picture><source srcset="img/solna-late-payments-vendor-1000x600.webp" type="image/webp"><img src="img/solna-late-payments-vendor-1000x600.jpg" alt="news1" class="img-news"></picture>
+                  </a>
+                </div>
+              </div>
+              <div class="news-bottom-part">
+                <div class="date-part">
+                  <p class="date-text">13  ноября 2018</p>
+                </div>
+                <div class="bot-title-part">
+                  <h2 class="bot-title">
+                    <a href="#" class="bot-link-title">Холодный расчет. Сколько инвестировать, чтобы получать $1000 пассивного дохода</a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev">
+            <svg class="swiper__button-prev">
+              <use xlink:href="img/sp/icons.svg#scroll" />
+              </use>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg class="swiper__button-next">
+              <use xlink:href="img/sp/icons.svg#scroll" />
+              </use>
             </svg>
           </div>
         </div>
-      </article>
+    </article>
 
-      <article class="service">
-     
-          <h2 class="service__tittle">
-            <a href="#" class="tittle-link">Статьи по теме</a>
-          </h2>
 
-          <div class="service__menu-slider swiper">
-            <div class="service__slider-wrapper swiper-wrapper">
-              <div class="news-item swiper-slide">
-                <div class="news-top-part">
-                  <div class="check">
-                    <a href="#" class="img-news-link">
-                      <picture><source srcset="img/AR-181019991.webp" type="image/webp"><img src="img/AR-181019991.jpg" alt="news1" class="img-news"></picture>
-                    </a>
-                  </div>
-                </div>
-                <div class="news-bottom-part">
-                  <div class="date-part">
-                    <p class="date-text">20  ноября 2018</p>
-                  </div>
-                  <div class="bot-title-part">
-                    <h2 class="bot-title">
-                      <a href="#" class="bot-link-title">Возраст и риск. Можно ли гарантированно получать 20% годовой доходности?</a>
-                    </h2>
-                  </div>
-                </div>
-              </div>
-              <div class="news-item swiper-slide">
-                <div class="news-top-part">
-                  <div class="check">
-                    <a href="#" class="img-news-link">
-                      <picture><source srcset="img/When-To-Sell-Stocks-2.webp" type="image/webp"><img src="img/When-To-Sell-Stocks-2.jpg" alt="news1" class="img-news"></picture>
-                    </a>
-                  </div>
-                </div>
-                <div class="news-bottom-part">
-                  <div class="date-part">
-                    <p class="date-text">15  ноября 2018</p>
-                  </div>
-                  <div class="bot-title-part">
-                    <h2 class="bot-title">
-                      <a href="#" class="bot-link-title">Капитал в России – что делать? И не пора ли продавать акции? Ответы на ваши вопросы</a>
-                    </h2>
-                  </div>
-                </div>
-              </div>
-              <div class="news-item swiper-slide">
-                <div class="news-top-part">
-                  <div class="check">
-                    <a href="#" class="img-news-link">
-                      <picture><source srcset="img/solna-late-payments-vendor-1000x600.webp" type="image/webp"><img src="img/solna-late-payments-vendor-1000x600.jpg" alt="news1" class="img-news"></picture>
-                    </a>
-                  </div>
-                </div>
-                <div class="news-bottom-part">
-                  <div class="date-part">
-                    <p class="date-text">13  ноября 2018</p>
-                  </div>
-                  <div class="bot-title-part">
-                    <h2 class="bot-title">
-                      <a href="#" class="bot-link-title">Холодный расчет. Сколько инвестировать, чтобы получать $1000 пассивного дохода</a>
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-prev">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74"
-                viewBox="0 0 74 74">
-                <defs>
-                  <path class="circle" id="ond5a1" d="M1764.15 6577l19.84 20-19.84 20"></path>
-                  <path class="shape" id="ond5b1" d="M1772 6560a37 37 0 1 1 0 74 37 37 0 0 1 0-74z"></path>
-                  <clipPath id="ond5d1">
-                    <use fill="#fff" xlink:href="#ond5a1"></use>
-                  </clipPath>
-                  <clipPath id="ond5c1">
-                    <use xlink:href="#ond5b1"></use>
-                  </clipPath>
-                </defs>
-                <g>
-                  <g transform="translate(-1735 -6560)">
-                    <use fill="#009aff" xlink:href="#ond5b1"></use>
-                  </g>
-                  <g clip-path="url(#ond5c1)" transform="translate(-1735 -6560)">
-                    <use fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="6"
-                      clip-path="url(&quot;#ond5d1&quot;)" xlink:href="#ond5a1"></use>
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <div class="swiper-button-next">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74"
-                viewBox="0 0 74 74">
-                <defs>
-                  <path class="circle" id="ond5a10" d="M1764.15 6577l19.84 20-19.84 20"></path>
-                  <path class="shape" fill="#" id="ond5b10" d="M1772 6560a37 37 0 1 1 0 74 37 37 0 0 1 0-74z"></path>
-                  <clipPath id="ond5d10">
-                    <use fill="#fff" xlink:href="#ond5a10"></use>
-                  </clipPath>
-                  <clipPath id="ond5c10">
-                    <use xlink:href="#ond5b10"></use>
-                  </clipPath>
-                </defs>
-                <g>
-                  <g transform="translate(-1735 -6560)">
-                    <use fill="#009aff" xlink:href="#ond5b10"></use>
-                  </g>
-                  <g clip-path="url(#ond5c10)" transform="translate(-1735 -6560)">
-                    <use fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="6"
-                      clip-path="url(&quot;#ond5d10&quot;)" xlink:href="#ond5a10"></use>
-                  </g>
-                </g>
-              </svg>
-            </div>
-          </div>
-       
-      </article>
 
-    </main>
-  </div>
-    <div class="discriptor-hint">
-      <div class="discriptor__wrapper">
-        <div class="discriptor__tittle">
-          <p class="discriptor-text">
-            Финансовые инструменты либо операции, озвученные в ходе оказания консультационных услуг, не являются индивидуальной инвестиционной рекомендацией. Определение соответствия финансового инструмента либо операции инвестиционным целям, инвестиционному горизонту и толерантности к риску является задачей Заказчика. ООО "Личный капитал" не несет ответственности за возможные убытки Заказчика в случае совершения операций, либо инвестирования в финансовые инструменты, упомянутые в ходе оказания консультационных услуг.
-          </p>
-        </div>
-      </div>
+
+
+
+
+
+    
     </div>
-   
-    <footer class="footer" >
+  </main>
+  
+
+  
+  <footer class="footer" >
   <div class="footer__content">
     <div class="footer__info-part">
       <div class="footer__top-info">
         <div class="footer__logo">
           <a href="/" class="footer__logo-link">
-            <img class="logo__img footer" src="img/Logo.svg" alt="">
+            <svg class="logo__img footer">
+              <use xlink:href="img/sp/icons.svg#Logo" />
+              </use>
+            </svg>
           </a>
         </div>
         <div class="footer__info">
@@ -856,7 +1244,7 @@
     
     <div class="footer__phone">
       <div class="phone-block">
-        <h3 class="phone-number-tittle-text">Контакты</h3>
+        <h3 class="phone-number-tittle-text block">Контакты</h3>
         <span class="mobile__buton"></span>
         <div class="phone-number">
           <h3 class="phone-number-tittle-text">Москва</h3>
@@ -871,63 +1259,79 @@
           <h3 class="phone-number-tittle-text">Минск</h3>
           <a class="phone-number-link" href="tel:+375296771030">+375 (29) 677-10-30</a>
         </div>
-      </div>
-      <div class="messager-number">
-        <h3 class="phone-number-tittle-text">Мессенджеры</h3>
-        <span class="mobile__buton"></span>
-        <div class="phone-number-block">
-          <div class="phone-number__element">
-            <a href="https://viber.click/+79645779776?roistat_visit=650957" class="messager-link">
-              <div class="messager-icon">
-                <img src="img/icons8-viber.svg" alt="viber" class="messager-pics">
-              </div>
-              <div class="messager-title">
-                <p class="messager-title-text">+7 (964) 577-97-76</p>
-              </div>
-            </a>
-          </div>
-          <div class="phone-number__element">
-            <a href="tg://resolve?domain=lichnykapital" class="messager-link">
-              <div class="messager-icon">
-                <img src="img/icons8-telegram-app.svg" alt="telegram" class="messager-pics">
-              </div>
-              <div class="messager-title">
-                <p class="messager-title-text">+7 (964) 577-97-76</p>
-              </div>
-            </a>
-          </div>
-          <div class="phone-number__element">
-            <a href="https://api.whatsapp.com/send/?phone=79645779776&amp;text&amp;app_absent=0&amp;roistat_visit=650957" class="messager-link">
-              <div class="messager-icon">
-                <img src="img/icons8-whatsapp-48.svg" alt="whatsapp" class="messager-pics">
-              </div>
-              <div class="messager-title">
-                <p class="messager-title-text">+7 (964) 577-97-76</p>
-              </div>
-            </a>
-          </div>
+        <div class="phone-number">
+          <h3 class="phone-number-tittle-text">Казахстан</h3>
+          <a class="phone-number-link" href="tel:+375296771030">+375 (29) 677-10-30</a>
         </div>
-        <div class="social-link">
-          <a href="skype:lkapital" class="social-item">
-            <img src="img/I_skype.svg" alt="skype" class="social-pics">
-            <span class="accessibility-content">скайп</span>
+      </div>
+    </div>
+    <div class="messager-number">
+      <h3 class="phone-number-tittle-text block">Мессенджеры</h3>
+      <span class="mobile__buton"></span>
+      <div class="phone-number-block">
+        <div class="phone-number__element">
+          <a href="https://viber.click/+79645779776?roistat_visit=650957" class="messager-link">
+            <div class="messager-icon">
+              <svg class="messager-pics">
+                <use xlink:href="img/sp/icons.svg#icons8-viber"/></use>
+              </svg>
+            </div>
+            <div class="messager-title">
+              <p class="messager-title-text">+7 (964) 577-97-76</p>
+            </div>
           </a>
-          <a href="https://vk.com/lichny_kapital?roistat_visit=650957" class="social-item">
-            <img src="img/vk.svg" alt="vk" class="social-pics">
-            <span class="accessibility-content">вконтакте</span>
+        </div>
+        <div class="phone-number__element">
+          <a href="tg://resolve?domain=lichnykapital" class="messager-link">
+            <div class="messager-icon">
+              <svg class="messager-pics">
+                <use xlink:href="img/sp/icons.svg#icons8-telegram-app"/></use>
+              </svg>
+            </div>
+            <div class="messager-title">
+              <p class="messager-title-text">+7 (964) 577-97-76</p>
+            </div>
           </a>
-          <a href="https://www.youtube.com/user/lkapital?roistat_visit=650957" class="social-item">
-            <img src="img/I_youtube.svg" alt="youtube" class="social-pics">
-            <span class="accessibility-content">ютуб</span>
-          </a>
-          <a href="tg://resolve?domain=LKapital" class="social-item">
-            <img src="img/I-06.svg" alt="telegram" class="social-pics">
-            <span class="accessibility-content">телеграм</span>
+        </div>
+        <div class="phone-number__element">
+          <a href="https://api.whatsapp.com/send/?phone=79645779776&amp;text&amp;app_absent=0&amp;roistat_visit=650957" class="messager-link">
+            <div class="messager-icon">
+              <svg class="messager-pics">
+                <use xlink:href="img/sp/icons.svg#icons8-whatsapp-48"/></use>
+              </svg>
+            </div>
+            <div class="messager-title">
+              <p class="messager-title-text">+7 (964) 577-97-76</p>
+            </div>
           </a>
         </div>
       </div>
-      
-      
+      <div class="social-link">
+        <a href="skype:lkapital" class="social-item">
+          <svg class="social-pics">
+            <use xlink:href="img/sp/icons.svg#I_skype"/></use>
+          </svg>
+          <span class="accessibility-content">скайп</span>
+        </a>
+        <a href="https://vk.com/lichny_kapital?roistat_visit=650957" class="social-item">
+          <svg class="social-pics">
+            <use xlink:href="img/sp/icons.svg#I_vk"/></use>
+          </svg>
+          <span class="accessibility-content">вконтакте</span>
+        </a>
+        <a href="https://www.youtube.com/user/lkapital?roistat_visit=650957" class="social-item">
+          <svg class="social-pics">
+            <use xlink:href="img/sp/icons.svg#I_youtube"/></use>
+          </svg>
+          <span class="accessibility-content">ютуб</span>
+        </a>
+        <a href="tg://resolve?domain=LKapital" class="social-item">
+          <svg class="social-pics">
+            <use xlink:href="img/sp/icons.svg#I-06"/></use>
+          </svg>
+          <span class="accessibility-content">телеграм</span>
+        </a>
+      </div>
     </div>
     
 
@@ -935,32 +1339,15 @@
   </div>
   
   <div id="scrollToTop" style="opacity: 1;">
-    <div class="" style="transform: rotate(270deg);">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74" viewBox="0 0 74 74">
-        <defs>
-          <path class="circle" id="ond5a1" d="M1764.15 6577l19.84 20-19.84 20"></path>
-          <path class="shape" id="ond5b1" d="M1772 6560a37 37 0 1 1 0 74 37 37 0 0 1 0-74z"></path>
-          <clipPath id="ond5d1">
-            <use fill="#fff" xlink:href="#ond5a1"></use>
-          </clipPath>
-          <clipPath id="ond5c1">
-            <use xlink:href="#ond5b1"></use>
-          </clipPath>
-        </defs>
-        <g>
-          <g transform="translate(-1735 -6560)">
-            <use fill="#009aff" xlink:href="#ond5b1"></use>
-          </g>
-          <g clip-path="url(#ond5c1)" transform="translate(-1735 -6560)">
-            <use fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="6" clip-path="url(&quot;#ond5d1&quot;)" xlink:href="#ond5a1"></use>
-          </g>
-        </g>
-      </svg></div>
+    <svg class="scroll">
+      <use xlink:href="img/sp/icons.svg#scroll" />
+      </use>
+    </svg>
   </div>
 
 </footer>
-      
-    
-    <script src="js/app.min.js?_v=20230212001345"></script>
-  </body>
+ 
+  <script src="js/app.min.js?_v=20230317185008"></script>
+</body>
+
 </html>
